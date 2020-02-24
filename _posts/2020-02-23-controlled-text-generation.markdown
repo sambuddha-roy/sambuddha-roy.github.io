@@ -18,12 +18,12 @@ now conditioning on this low likelihood token too. Akin to one's thought being d
 "errors being compounded". Related keyphrases: teacher forcing, etc.
   * thus, we have to prevent sampling from the tail.
 - Solutions:
-  * temperature sampling. motivated by thermodynamics. higher temperature = more energy in the system, more unstable. More unstable
+  * **temperature sampling**. motivated by thermodynamics. higher temperature = more energy in the system, more unstable. More unstable
   means that low likelihood states will be reached more often. So in order to retain confidence in only the high likelihood tokens,
   lower the temperature.
-  * top-k sampling. Given all the tokens with their individual probabilities, keep only the top k (top according to their probabilities)
+  * **top-k sampling**. Given all the tokens with their individual probabilities, keep only the top k (top according to their probabilities)
   tokens. This may not necessarily be good - why? For some contexts, the words/tokens might have a broad/heavy tailed distribution, while for other contexts, the distribution might be quite spiky/almost dirac delta like. This is what the paper calls broad/narrow distributions. Hence the following strategy.
-  * top-p sampling/nucleus sampling. Here "p" stands for the probability. We have to declare a cutoff for the tokens. Instead of selecting a fixed k in the top k, keep only the top few tokens that account for the most of the probability mass (i.e. go for
+  * **top-p sampling/nucleus sampling**. Here "p" stands for the probability. We have to declare a cutoff for the tokens. Instead of selecting a fixed k in the top k, keep only the top few tokens that account for the most of the probability mass (i.e. go for
   quantiles instead of mean - this is clearly more robust).
 
 

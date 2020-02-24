@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Controlled Text Generation"
-date:   2020-02-06 18:30:15 -0800
+date:   2020-02-23 18:30:15 -0800
 categories: jekyll update
 ---
 
 In the following, we summarize some of the blogs/articles on the topic of controlled text generation.
 
-*Neural Degeneration paper*
+*[Neural Degeneration paper](https://arxiv.org/pdf/1904.09751.pdf)*
 - Overall, the strategy for beam search as well as other strategies is: given the pool of possible extensions, the tokens, figure out which ones to retain. The only quantity that we have, to play with, are the probabilities of the tokens. Given these probabilities, design
 a cut-off strategy.
 - Problem: The probabilities of the tokens are (often) heavy tailed.

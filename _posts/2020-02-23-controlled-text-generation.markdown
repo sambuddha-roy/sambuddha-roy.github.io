@@ -28,13 +28,16 @@ now conditioning on this low likelihood token too. Akin to one's thought being d
 
 
 
-*Terms*
+**Terms**
+
 _Exposure Bias_
 When we are generating text, we generate a new word according to the context, then add this word to the context, and use this modified
 context to generate a new word, and so on.
 However, now what happens is that the new word/set of words are coming from a distribution that has not been seen by the training data.
 (For instance, the n-gram generated might not be at all in the set of training n-grams). This leads to a bias and is called the
 "exposure bias".
+
+** Other Ideas **
 
 
 

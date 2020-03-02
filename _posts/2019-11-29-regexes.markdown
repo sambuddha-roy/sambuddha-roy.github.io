@@ -10,10 +10,10 @@ Alternative possibilities exist (for instance using spaCy and tokenization); for
 ### Comments
 1. There is also this fantastic tool/site [regex101](https://regex101.com/) that is quite useful for
 testing out one's regexes on sample strings, with explanations etc.
-2. In the process of noting down my common regexes, I also came across this good resource:
+2. In the process of noting down my common regexes, I also came across this great resource:
 [regular-expressions.info](https://www.regular-expressions.info/email.html) which has the same
-purpose, to list out the common expressions.
-However my list is tailored for my usecases, for my perusal during the day's work, so I am keeping this article in.
+purpose, to list out, as well as reason about the most commonly used regexes.
+However the list below is tailored for my usecases, for my perusal during the day's work, so I am keeping this article in.
 
 ### Basics
 There are four main functions in the [re module](https://github.com/python/cpython/blob/3.8/Lib/re.py):

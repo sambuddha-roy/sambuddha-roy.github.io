@@ -8,7 +8,7 @@ In this post, we are going to discuss some common code snippets used in extracti
 Alternative possibilities exist (for instance using spaCy and tokenization); for this post, we will be using the popular `re` package of Python.
 
 ### Comments
-1. There is also this fantastic tool/site [regex101](https://regex101.com/) that is quite useful for
+1. There is also this fantastic tool/site [regex101](https://regex101.com/){target="_blank"} that is quite useful for
 testing out one's regexes on sample strings, with explanations etc.
 2. In the process of noting down my common regexes, I also came across this great resource:
 [regular-expressions.info](https://www.regular-expressions.info/email.html) which has the same
@@ -56,6 +56,12 @@ extract_kp_from_sentence(kp, sentence)
 # (20, 23)
 # (26, 29)
 {% endhighlight %}
+
+If you want to ignore the case of the keyphrase while detecting a match, use `re.IGNORECASE`:
+{% highlight python %}
+
+{% endhighlight %}
+
 
 
 ### Emails

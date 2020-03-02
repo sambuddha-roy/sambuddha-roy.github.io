@@ -27,7 +27,9 @@ def extract_kp_from_sentence(kp, sentence):
    	  print(match.span())
 {% endhighlight %}
 
-Here is a [regex](https://regex101.com/r/esfLe5/1) for emails.
+### Emails
+Here is a [regex](https://regex101.com/r/esfLe5/1) for emails; with the
+username and the domain name separated out.
 {% highlight python %}
 import re
 email_pattern = r'(\w+)\@([\w+.]+)'
@@ -35,6 +37,30 @@ string = 'This is my email = abc@def.co.in'
 matches = re.findall(email_pattern, string)
 {% endhighlight %}
 
+This results in the following:
+{% highlight python %}
+matches = [('abc', 'def.co.in')]
+{% endhighlight %}
+
+This is because of the grouping effected by `(..)`:
+`(\w+)` for the first group and `([\w+.]+)` for the
+second grouping.
+
+If you want the entire email itself without the username and domain name separated,
+then just remove the parentheses:
+{% highlight python %}
+import re
+email_pattern = r'\w+\@[\w+.]+'
+string = 'This is my email = abc@def.co.in'
+matches = re.findall(email_pattern, string)
+{% endhighlight %}
+
+which results in:
+{% highlight python %}
+matches = ['abc@def.co.in']
+{% endhighlight %}
+
+### URLs
 
 # References:
 1. [Tutorial on regexes on google.developer.com](https://developers.google.com/edu/python/regular-expressions)

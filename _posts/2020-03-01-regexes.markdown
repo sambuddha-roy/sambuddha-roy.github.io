@@ -35,14 +35,28 @@ as a pattern - the use of `r'..`
 
 {% highlight python %}
 import re
-kp = "abc"
-sentence = "This is the work of abc company"
 
 def extract_kp_from_sentence(kp, sentence):
    pattern = r'\b' + kp + r'\b'
    for match in re.finditer(pattern, sentence):
    	  print(match.span())
 {% endhighlight %}
+
+A sample run:
+{% highlight python %}
+kp = "abc"
+sentence = "This is the work of abc company"
+
+extract_kp_from_sentence(kp, sentence)
+# (20, 23)
+assert(sentence[20:23] == 'abc')
+
+sentence = "This is the work of abc & abc company"
+extract_kp_from_sentence(kp, sentence)
+# (20, 23)
+# (26, 29)
+{% endhighlight %}
+
 
 ### Emails
 Here is a [regex](https://regex101.com/r/esfLe5/1) for emails; with the

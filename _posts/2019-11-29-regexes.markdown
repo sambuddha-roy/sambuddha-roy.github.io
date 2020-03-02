@@ -85,8 +85,10 @@ A sample on regex101 is [here](https://regex101.com/r/esfLe5/2/).
 {% highlight python %}
 import re
 guid_pattern = r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
-string = 'This is my email = abc@def.co.in'
-matches = re.findall(email_pattern, string)
+string = 'Here is a sample guid = 386940a3-f37d-48c4-b3a0-92ab6859e04c'
+matches = re.findall(guid_pattern, string)
+
+\# matches = ['386940a3-f37d-48c4-b3a0-92ab6859e04c']
 {% endhighlight %}
 
 

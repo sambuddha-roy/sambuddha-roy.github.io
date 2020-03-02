@@ -59,7 +59,12 @@ extract_kp_from_sentence(kp, sentence)
 
 If you want to ignore the case of the keyphrase while detecting a match, use `re.IGNORECASE`:
 {% highlight python %}
-
+kp = 'ABC'
+sentence = "This is the work of abc & abc company"
+list(re.finditer(pattern, sentence, re.IGNORECASE))
+# returns
+# [<re.Match object; span=(20, 23), match='abc'>,
+# <re.Match object; span=(26, 29), match='abc'>]
 {% endhighlight %}
 
 

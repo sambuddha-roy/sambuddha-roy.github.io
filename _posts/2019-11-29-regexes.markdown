@@ -1,26 +1,34 @@
 ---
 layout: post
-title:  "Regexes for keyphrase extraction"
+title:  "Regexes for daily use"
 date:   2019-11-29 18:30:15 -0800
 categories: jekyll update
 ---
 In this post, we are going to discuss some common code snippets used in extracting phrases out of text.
-Alternative possibilities exist (for instance using spaCy and tokenization); for this post, we will be using
-the popular re package of Python.
+Alternative possibilities exist (for instance using spaCy and tokenization); for this post, we will be using the popular `re` package of Python.
 
 There are four main functions in the [re module](https://github.com/python/cpython/blob/3.8/Lib/re.py):
-match, search, findall and finditer (there are many other interesting functions such as sub, subn - for
+`match`, `search`, `findall` and `finditer` (there are many other interesting functions such as sub, subn - for
 details look at the [source code](https://github.com/python/cpython/blob/3.8/Lib/re.py)).
 
-The function findall gives
-us all the matches of the _pattern_ in the actual _string_, but it is the function finditer that also gives us
+The function `findall` gives
+us all the matches of the _pattern_ in the actual _string_, but it is the function `finditer` that also gives us
 the _spans_ of the matches. This is often necessary in actual work, where we want to modify the spans (say, we want
 to create a HTML span where the span of the _pattern_ is highlighted).
 
-Sample code snippet:
+Sample code snippets follow.
+
+### Keyphrases
+This is quite mundane, the only two things that need be noted here are:
+1. use of the `\b` in order to demarcate word boundary.
+2. How we frame the input keyphrase, which is often a variable in the program,
+as a pattern - the use of `r'..`
 
 {% highlight python %}
 import re
+kp = "abc"
+sentence = "This is the work of abc company"
+
 def extract_kp_from_sentence(kp, sentence):
    pattern = r'\b' + kp + r'\b'
    for match in re.finditer(pattern, sentence):
@@ -33,6 +41,7 @@ username and the domain name separated out.
 {% highlight python %}
 import re
 email_pattern = r'(\w+)\@([\w+.]+)'
+
 string = 'This is my email = abc@def.co.in'
 matches = re.findall(email_pattern, string)
 {% endhighlight %}
@@ -62,6 +71,8 @@ matches = ['abc@def.co.in']
 
 ### URLs
 
+
 # References:
 1. [Tutorial on regexes on google.developer.com](https://developers.google.com/edu/python/regular-expressions)
 2. [Another tutorial on Python regexes](https://www.guru99.com/python-regular-expressions-complete-tutorial.html)
+3. [A nice blog on Python regexes and use of regex101](https://mlwhiz.com/blog/2019/09/01/regex/?utm_campaign=the-ultimate-guide-to-using-the-python-regex-module)

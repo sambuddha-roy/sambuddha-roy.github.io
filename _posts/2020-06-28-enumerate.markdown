@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An antipattern: Modifying a list inside `enumerate`"
+title:  "An antipattern: Modifying a list inside enumerate"
 date:   2020-06-28 18:30:15 -0800
 categories: jekyll update
 ---

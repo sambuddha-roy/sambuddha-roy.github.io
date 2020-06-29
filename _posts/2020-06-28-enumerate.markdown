@@ -77,3 +77,10 @@ If an element of the list is `pop`ped from the list, then
 that index is taken by the merged list entry. Also, 
 we do not consider the merged entry in the next iteration of 
 the `for` loop.
+
+It is very surprising that the above program works at all; 
+it is easy to assume that there is only one evaluation of the 
+call to `enumerate(rev_input_list)` - but as it turns out
+that is not the case at all. It is evaluated at every 
+step, with the index being updated (by 1) at every step, 
+and whatever item appears at that index in the updated list.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Controlled Text Generation"
+title:  "BLEURT - ACL 2020"
 date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
@@ -41,6 +41,12 @@ usually done via tracking the embedding of the `[CLS]` token.
   * While this is a feasible approach, there are some issues with this. BERT was trained
 on a certain corpus; so if we pick up data from another domain, the (pretrained)
 embeddings might not be very meaningful by themselves.
+
+2. So, a natural approach is to infuse some _finetuning_ of BERT using data from the new
+domain. Here, we assume that we do have some ratings data, where the data essentially looks
+like `(sentence_1, sentence_2, rating)` where `rating` is (say) a real number between 0
+and 1.
+
 
 
 

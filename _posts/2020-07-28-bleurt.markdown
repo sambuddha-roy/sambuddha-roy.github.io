@@ -45,7 +45,23 @@ embeddings might not be very meaningful by themselves.
 2. So, a natural approach is to infuse some _finetuning_ of BERT using data from the new
 domain. Here, we assume that we do have some ratings data, where the data essentially looks
 like `(sentence_1, sentence_2, rating)` where `rating` is (say) a real number between 0
-and 1.
+and 1. However, the ratings data is not very large, so we only get so much mileage from
+this idea.
+  * How do we plan to use such a model?
+
+3. The next idea is to mitigate this problem - we want to get a _lot_ of (synthetic)
+data in order to pretrain the BERT model, before finetuning it on the limited ratings
+data. The main question is how do we get this synthetic ratings data? This is by now,
+a familiar style of thinking - this follows the _weak supervision_ motif of  
+"think label functions instead of labels" (see for instance [Snorkel](https://www.snorkel.ai/)).
+Thus, here too, we will get a whole bunch of synthetic _labeled_ data, and use that
+for pretraining.
+
+Does this make this metric a "hybrid" metric too? No! Here the _handcrafting_ has been
+folded in the upstream processing, so to speak: the handcrafting here is to devise
+rules to generate the synthetic data. But since we are using the handcrafting to generate
+(a large amount of) training data that will then (hopefully) be smoothed out by the
+training process. 
 
 
 

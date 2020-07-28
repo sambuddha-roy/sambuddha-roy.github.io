@@ -84,3 +84,6 @@ call to `enumerate(rev_input_list)` - but as it turns out
 that is not the case at all. It is evaluated at every 
 step, with the index being updated (by 1) at every step, 
 and whatever item appears at that index in the updated list.
+
+### References.
+1. [The enumerate built-in function](https://www.python.org/dev/peps/pep-0279/)

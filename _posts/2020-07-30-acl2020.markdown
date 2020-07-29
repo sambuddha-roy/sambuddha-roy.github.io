@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Papers of personal interest in ACL 2020"
+date:   2020-07-30 18:30:15 -0800
+categories: jekyll update
+---
+
+Here is a list of some papers of personal interest in ACL 2020. I will write up some
+short notes on each of these papers as time goes by.
+
+### Paper list
+Here is [the list](https://acl2020.org/program/accepted/) of accepted papers.
+
+* [BLEURT paper]() - new automatic metrics for NLG evaluation.
+  * [google blog here](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html)
+  * [code for the metric here](https://github.com/google-research/bleurt)
+  * [my notes here]()
+* [mixture of h-1 heads better than h](https://www.aclweb.org/anthology/2020.acl-main.587/) - transformer  architectures.
+* [generative model for joint NLU NLG](https://www.aclweb.org/anthology/2020.acl-main.163/)
+* [hierarchy of RNN architectures](https://www.aclweb.org/anthology/2020.acl-main.43.pdf)
+* [machine reading comprehension framework for NER](https://www.aclweb.org/anthology/2020.acl-main.519.pdf) - handles flat and nested NER.
+  * [code here](https://github.com/ShannonAI/mrc-for-flat-nested-ner)
+* [BART - denoising seq2seq pretraining](https://www.aclweb.org/anthology/2020.acl-main.703/)

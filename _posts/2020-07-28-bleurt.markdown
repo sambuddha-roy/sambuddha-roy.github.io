@@ -56,7 +56,6 @@ a familiar style of thinking - this follows the _weak supervision_ motif of
 "think label functions instead of labels" (see for instance [Snorkel](https://www.snorkel.ai/)).
 Thus, here too, we will get a whole bunch of synthetic _labeled_ data, and use that
 for pretraining.
-
 Does this make this metric a "hybrid" metric too? No! Here the _handcrafting_ has been
 folded in the upstream processing, so to speak: the handcrafting here is to devise
 rules to generate the synthetic data. But since we are using the handcrafting to generate

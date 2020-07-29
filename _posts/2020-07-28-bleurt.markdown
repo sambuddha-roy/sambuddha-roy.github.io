@@ -61,14 +61,11 @@ Does this make this metric a "hybrid" metric too? No! Here the _handcrafting_ ha
 folded in the upstream processing, so to speak: the handcrafting here is to devise
 rules to generate the synthetic data. But since we are using the handcrafting to generate
 (a large amount of) training data that will then (hopefully) be smoothed out by the
-training process. 
+training process.
 
 
 
 
-
-
-
-# References:
-### Papers
+## References:
 1. [BLEURT paper, ACL 2020](https://www.aclweb.org/anthology/2020.acl-main.704/)
+2. [Snorkel](https://www.snorkel.ai/)

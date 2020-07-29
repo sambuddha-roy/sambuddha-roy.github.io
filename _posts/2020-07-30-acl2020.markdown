@@ -27,6 +27,8 @@ Here is [the list](https://acl2020.org/program/accepted/) of accepted papers.
   * [openreview](https://openreview.net/forum?id=Bkgz_krKPB)
   * [code](https://github.com/castorini/d-bert)
 * [role of attention heads in transformer architectures](https://www.aclweb.org/anthology/2020.acl-main.311/#:~:text=Abstract,is%20unique%20in%20the%20architecture.)
+* [injecting numeracy into language models](https://www.aclweb.org/anthology/2020.acl-main.89.pdf)
+  * [code](https://github.com/ag1988/injecting_numeracy)
 
 ### References
 * [Papers with code for data-to-text generation](https://paperswithcode.com/task/data-to-text-generation/codeless)

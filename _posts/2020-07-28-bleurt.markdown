@@ -7,7 +7,9 @@ categories: jekyll update
 
 We discuss the Bleurt paper that appears in ACL 2020, handles the problem of _learning metrics_
 for some specific NLP tasks.
-Note that there is a [Google blog article](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html) on this paper too.
+Note that there is a [Google blog article](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html) on this paper too. This blog article gives a good overview of what's
+going on in this paper, however the following are my short notes, primarily for personal
+understanding. 
 
 In literature, and previous work, when we
 consider _machine translation_ or _data-to-text_ tasks, we often use

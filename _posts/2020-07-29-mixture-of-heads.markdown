@@ -5,7 +5,7 @@ date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
 
-What follows are some short notes on the paper on the [mixture of h-1 heads vs. h heads]().
+What follows are some short notes on the paper on the [mixture of h-1 heads vs. h heads](https://www.aclweb.org/anthology/2020.acl-main.587/).
 
 
 

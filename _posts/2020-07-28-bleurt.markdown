@@ -5,8 +5,9 @@ date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
 
-The Bleurt paper that appears in ACL 2020, handles the problem of _learning metrics_
+We discuss the Bleurt paper that appears in ACL 2020, handles the problem of _learning metrics_
 for some specific NLP tasks.
+Note that there is a [Google blog article](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html) on this paper too.
 
 In literature, and previous work, when we
 consider _machine translation_ or _data-to-text_ tasks, we often use
@@ -68,5 +69,6 @@ training process.
 
 ## References:
 1. [BLEURT paper, ACL 2020](https://www.aclweb.org/anthology/2020.acl-main.704/)
-2. [Snorkel](https://www.snorkel.ai/)
-3. [Ehud Reiter's blog on evaluations using BLEU](https://ehudreiter.com/2020/07/28/small-differences-in-bleu-are-meaningless/)
+2. [Google Blog on BLEURT](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html)
+3. [Snorkel](https://www.snorkel.ai/)
+4. [Ehud Reiter's blog on evaluations using BLEU](https://ehudreiter.com/2020/07/28/small-differences-in-bleu-are-meaningless/)

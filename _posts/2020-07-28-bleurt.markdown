@@ -22,7 +22,9 @@ A good metric is one that _mimics_ this process.
 #### Motivating examples
 Metrics such as BLEU, ROUGE measure overlaps of n-grams. Thus, such measures fail to
 take into consideration the _semantic similarity_ of two pieces of text (typically,
-sentences).
+sentences). More so, [recent work, ACL 2020](https://www.aclweb.org/anthology/2020.acl-main.448.pdf)
+indicates that small differences in BLEU are not indicative enough of model performance
+(also see this [blog](https://ehudreiter.com/2020/07/28/small-differences-in-bleu-are-meaningless/)).
 
 Recent papers have tried to improve upon these by either proposing
 * **Fully learned metrics** Examples: BEER, RUSE, ESIM etc. This allows more
@@ -64,7 +66,7 @@ training process.
 
 
 
-
 ## References:
 1. [BLEURT paper, ACL 2020](https://www.aclweb.org/anthology/2020.acl-main.704/)
 2. [Snorkel](https://www.snorkel.ai/)
+3. [Ehud Reiter's blog on evaluations using BLEU](https://ehudreiter.com/2020/07/28/small-differences-in-bleu-are-meaningless/)

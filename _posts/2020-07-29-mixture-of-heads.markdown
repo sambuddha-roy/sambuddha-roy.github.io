@@ -7,6 +7,16 @@ categories: jekyll update
 
 What follows are some short notes on the paper on the [mixture of h-1 heads vs. h heads](https://www.aclweb.org/anthology/2020.acl-main.587/).
 
+**Overall theme**
+
+Usually in the transformer architecture we use multiple heads. Are all of these
+necessary?
+
+Earlier papers have indicated that the architecture is overparametrized, not all of
+the heads might be necessary.
+
+This paper keeps all the heads, but instead of mixing the heads uniformly, inserts a
+layer that learns the right _mixture_ of the heads. 
 
 
 ## References:

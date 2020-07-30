@@ -34,7 +34,13 @@ experts (the `g` values) and then we _sample_ using these weights. We choose _on
 expert chosen by this process to update weights in this round.
 Is this why we choose an expert to be a selection of `h-1` heads? So that across
 different experts (and their updates) there is some sharing of weights; so that in
-different rounds, we are not updating entirely different sets of weights. 
+different rounds, we are not updating entirely different sets of weights.
+Is this done so that we have faster convergence?
+* Surprise 3: The authors refer to an earlier paper on mixture models - as to how such models
+fixate to a degenerate set of weights. This is why they use a block coordinate descent style
+update instead of jointly updating the F and the G vectors in the paper (their NoBCD model). 
+* Surprise 4: Connections to dropout
+
 
 
 

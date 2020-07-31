@@ -11,13 +11,19 @@ short notes on each of these papers as time goes by.
 ### Paper list
 Here is [the list](https://icml.cc/Conferences/2020/Schedule?type=Poster) of accepted papers.
 
-* [transformers are rnns](https://arxiv.org/abs/2006.16236)
-  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6257)
+* [transformers are rnns](https://proceedings.icml.cc/static/paper_files/icml/2020/2935-Paper.pdf)
+  * [on reddit](https://www.reddit.com/r/MachineLearning/comments/hl2usx/d_paper_explained_transformers_are_rnns_fast/)
+  * [yannic kilcher's youtube video](https://www.youtube.com/watch?v=hAooAOFRsYc)
+  * [code](https://github.com/lucidrains/linear-attention-transformer)
 * [powernorm paper](https://arxiv.org/abs/2003.07845)
-  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6189)
+  * [code](https://github.com/sIncerass/powernorm)
+  * [slides](https://sincerass.github.io/docs/powernorm_slides.pdf)
+  * [supplementary](https://proceedings.icml.cc/static/paper_files/icml/2020/2650-Supplemental.pdf)
 * [mutual information for text generation](https://arxiv.org/abs/2007.00067)
   * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6796)
 * [quality-diversity evaluation for text generation](https://arxiv.org/abs/2007.01488)
   * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6291)
 * [rnn and lstms - long memory?](https://arxiv.org/pdf/2006.03860.pdf)
   * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=5907)
+* [generative flows, matrix exponential](https://proceedings.icml.cc/static/paper_files/icml/2020/2283-Paper.pdf)
+* [fair generative modeling, weak supervision](https://proceedings.icml.cc/book/4171.pdf)

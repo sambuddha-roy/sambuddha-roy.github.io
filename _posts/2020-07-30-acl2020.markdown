@@ -16,6 +16,7 @@ Here is [the list](https://acl2020.org/program/accepted/) of accepted papers.
   * [code for the metric here](https://github.com/google-research/bleurt)
   * [my notes here](bleurt.html)
 * [mixture of h-1 heads better than h](https://www.aclweb.org/anthology/2020.acl-main.587/) - transformer  architectures.
+  * [my notes here](mixture-of-heads.html)
 * [generative model for joint NLU NLG](https://www.aclweb.org/anthology/2020.acl-main.163/)
 * [hierarchy of RNN architectures](https://www.aclweb.org/anthology/2020.acl-main.43.pdf)
 * [machine reading comprehension framework for NER](https://www.aclweb.org/anthology/2020.acl-main.519.pdf) - handles flat and nested NER.

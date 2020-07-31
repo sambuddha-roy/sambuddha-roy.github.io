@@ -15,6 +15,7 @@ Here is [the list](https://icml.cc/Conferences/2020/Schedule?type=Poster) of acc
   * [on reddit](https://www.reddit.com/r/MachineLearning/comments/hl2usx/d_paper_explained_transformers_are_rnns_fast/)
   * [yannic kilcher's youtube video](https://www.youtube.com/watch?v=hAooAOFRsYc)
   * [code](https://github.com/lucidrains/linear-attention-transformer)
+  * [code](https://github.com/idiap/fast-transformers) also [here](https://fast-transformers.github.io/)
 * [powernorm paper](https://arxiv.org/abs/2003.07845)
   * [code](https://github.com/sIncerass/powernorm)
   * [slides](https://sincerass.github.io/docs/powernorm_slides.pdf)

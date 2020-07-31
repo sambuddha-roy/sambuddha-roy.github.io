@@ -19,3 +19,5 @@ Here is [the list](https://icml.cc/Conferences/2020/Schedule?type=Poster) of acc
   * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6796)
 * [quality-diversity evaluation for text generation](https://arxiv.org/abs/2007.01488)
   * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6291)
+* [rnn and lstms - long memory?](https://arxiv.org/pdf/2006.03860.pdf)
+  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=5907)

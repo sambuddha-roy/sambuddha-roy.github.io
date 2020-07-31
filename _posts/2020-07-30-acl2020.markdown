@@ -15,7 +15,7 @@ Here is [the list](https://acl2020.org/program/accepted/) of accepted papers.
   * [google blog here](https://ai.googleblog.com/2020/05/evaluating-natural-language-generation.html)
   * [code for the metric here](https://github.com/google-research/bleurt)
   * [my notes here, trial 2]()
-  * [my notes here]()
+  * [my notes here](2020-07-28-bleurt.markdown)
 * [mixture of h-1 heads better than h](https://www.aclweb.org/anthology/2020.acl-main.587/) - transformer  architectures.
 * [generative model for joint NLU NLG](https://www.aclweb.org/anthology/2020.acl-main.163/)
 * [hierarchy of RNN architectures](https://www.aclweb.org/anthology/2020.acl-main.43.pdf)

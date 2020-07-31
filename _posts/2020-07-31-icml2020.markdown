@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Papers of personal interest in ICML 2020"
+date:   2020-07-28 18:30:15 -0800
+categories: jekyll update
+---
+
+Here is a list of some papers of personal interest in ICML 2020. I will write up some
+short notes on each of these papers as time goes by.
+
+### Paper list
+Here is [the list](https://icml.cc/Conferences/2020/Schedule?type=Poster) of accepted papers.
+
+* [transformers are rnns](https://arxiv.org/abs/2006.16236)
+  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6257)
+* [powernorm paper](https://arxiv.org/abs/2003.07845)
+  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6189)
+* [mutual information for text generation](https://arxiv.org/abs/2007.00067)
+  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6796)
+* [quality-diversity evaluation for text generation](https://arxiv.org/abs/2007.01488)
+  * [page on conf site](https://icml.cc/Conferences/2020/Schedule?showEvent=6291)

@@ -35,8 +35,11 @@ Whenever such components are added on to an existing architecture, two questions
 component really new?
 2. Is the new component useful?
 
-**Going towards mixture of experts**:
-The authors claim that
+**The new component - Mixture of experts**:
+The starting point is the realisation mentioned above: in the current transformer architecture, the
+different heads are aggregated according to the weight matrix `W`; this is equivalent to the
+_same aggregation_ irrespective of the inputs (and the input matrices `H_i`).
+
 We may think of the heads as being experts, and thereby we would want to learn the
 correct _mixture of experts_, i.e. the correct weighting of the experts.  
 

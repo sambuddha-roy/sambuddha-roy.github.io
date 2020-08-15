@@ -34,4 +34,4 @@ Let us consider the MIPS problem where we are trying to find only the _top_ cand
 ### References
 
 * [greedy mips paper, neurips 2017](https://papers.nips.cc/paper/7129-a-greedy-approach-for-budgeted-maximum-inner-product-search.pdf)
-  * [code](https://github.com/rofuyu/exp-gmips-nips17)
+  * [code by rofuyu](https://github.com/rofuyu/exp-gmips-nips17)

@@ -5,7 +5,7 @@ date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
 
-### Main Idea
+### Goal
 The basic problem is the _Maximum Inner Product Search_ (MIPS) problem: given a vector `q`, and a collection
 of candidate vectors `h_1, h_2, ..., h_n`, find out the candidates (top-k) that have the largest
 inner products `<w, h_i>`.
@@ -29,6 +29,10 @@ the _Nearest Neighbor Search_ (NNS) problem, as also _sampling_ based approaches
 
 Let us consider the MIPS problem where we are trying to find only the _top_ candidate.
 
+**Sampling for MIPS**
+
+Here, the idea is to _sample_ the `j`th candidate with probability `p(j) ~ <q, h_j>`.
+More precisely, sample `(j, t)` pairs according to `w_t h_{jt}`
 
 
 ### References

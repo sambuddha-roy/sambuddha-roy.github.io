@@ -32,7 +32,16 @@ Let us consider the MIPS problem where we are trying to find only the _top_ cand
 **Sampling for MIPS**
 
 Here, the idea is to _sample_ the `j`th candidate with probability `p(j) ~ <q, h_j>`.
-More precisely, sample `(j, t)` pairs according to `w_t h_{jt}`
+More precisely, sample `(j, t)` pairs according to `q_t h_{jt}` (where `t` ranges over the
+  coordinates of each vector, say `q` or `h_j`).
+
+Suppose we have 3 vectors, each of 2 dimensions as follows:
+
+| --- | --- |
+| 4 | 5 |
+| 3 | 1 |
+| 2 | 7 |
+| --- | --- |
 
 
 ### References

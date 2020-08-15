@@ -37,11 +37,12 @@ More precisely, sample `(j, t)` pairs according to `q_t h_{jt}` (where `t` range
 
 Suppose we have 3 vectors, each of 2 dimensions as follows:
 
-| --- | --- |
-| 4 | 5 |
-| 3 | 1 |
-| 2 | 7 |
-| --- | --- |
+  |vector |dim0 | dim1 |
+  |--| --- | ----------- |
+  |h_1| 4 | 5 |
+  |h_2| 3 | 1 |
+  |h_3|2|7|
+
 
 
 ### References

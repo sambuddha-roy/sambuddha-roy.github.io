@@ -5,6 +5,8 @@ date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
 
+Contains short notes on the [Greedy MIPS paper, NeurIPS 2017](https://papers.nips.cc/paper/7129-a-greedy-approach-for-budgeted-maximum-inner-product-search.pdf).
+
 ### Goal
 This paper considers the _Maximum Inner Product Search_ (MIPS) problem, stated as follows:
 
@@ -27,9 +29,8 @@ Thus, a naive linear search will use `nk` operations to compute the inner produc
 The overall goal is to improve on this time; however the tradeoff is that we may instead yield an approximation to the MIPS problem.
 
 In the paper, the authors actually consider the
-_budgeted_ MIPS problem: we have to pick up `B`
-such vectors that are the top candidates `h_i` maximizing the value `<w, h_i>`. In more detail,
-pick the `B` vectors `h_i` such that
+_budgeted_ MIPS problem: we have to pick up the `B` vectors `h_i` such that these have the top `B` values in the list of inner products
+`<w, h_i>`.
 
 ### Related Literature
 Given the cardinal position, that the MIPS problem enjoys in many naturally occurring computations in

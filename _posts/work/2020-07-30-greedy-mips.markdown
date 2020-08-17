@@ -13,7 +13,7 @@ This paper considers the _Maximum Inner Product Search_ (MIPS) problem, stated a
 
 Given a vector $$q$$, and a collection
 of candidate vectors $$h_1, h_2, \cdots , h_n$$, find out the candidates (top-k) that have the largest
-inner products $$w \circ h_i$$.
+inner products $$q \circ h_i$$.
 
 **Why is this problem interesting?**
 
@@ -30,7 +30,7 @@ $$n \log n$$ time.
 The overall goal is to improve on this time; however the tradeoff is that we may instead yield an approximation to the MIPS problem.
 
 In the paper, the authors actually consider the
-_budgeted_ MIPS problem: we have to pick up the $$B$$ vectors $$h_i$$ such that these have the top $$B$$ values in the list of inner products $$ w\circ h_i$$.
+_budgeted_ MIPS problem: we have to pick up the $$B$$ vectors $$h_i$$ such that these have the top $$B$$ values in the list of inner products $$ q\circ h_i$$.
 
 ### Related Literature
 Given the cardinal position, that the MIPS problem enjoys in many naturally occurring computations in
@@ -43,17 +43,9 @@ the _Nearest Neighbor Search_ (NNS) problem,
 We will talk about these in other short notes, so we do not discuss those here.
 
 However, note that in the sampling approach,
-the idea is to
-
-
-**Reduction to NNS**
-<TODO: provide details here>
-
-**Sampling for MIPS**
-
-Here, the idea is to _sample_ the `j`th candidate with probability `p(j) ~ <q, h_j>`.
-More precisely, sample `(j, t)` pairs according to `q_t h_{jt}` (where `t` ranges over the
-  coordinates of each vector, say `q` or `h_j`).
+the idea is to _sample_ the $$j^{th}$$ candidate with probability $$P(j) \sim q \circ h_j$$.
+More precisely, sample $$(j, t)$$ pairs according to $$q_t h_{j, t}$$ (where $$t$$ ranges over the
+  coordinates of each vector, say $$q$$ or $$h_j$$).
 
 Suppose we have 3 vectors, each of 2 dimensions as follows:
 

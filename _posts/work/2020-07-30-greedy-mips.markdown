@@ -15,7 +15,7 @@ Given a vector $$q$$, and a collection
 of candidate vectors $$h_1, h_2, \cdots , h_n$$, find out the candidates (top-k) that have the largest
 inner products $$q \circ h_i$$.
 
-**Why is this problem interesting?**
+#### Why is this problem interesting?
 
 As one of many examples, from NLP, a common step is one where we need to choose one (or a fixed number, say 10) out of all the tokens in a vocabulary (say there are 40000 terms in the vocab). In order to do this, we "hit" the embeddings of the vocab tokens with a "query"
 vector (say, a learned weight vector) and take the top few inner products. This is clearly captured by the framework of the MIPS problem.
@@ -42,6 +42,7 @@ the _Nearest Neighbor Search_ (NNS) problem,
 
 We will talk about these in other short notes, so we do not discuss those here.
 
+### Starting off
 However, note that in the sampling approach,
 the idea is to _sample_ the $$j^{th}$$ candidate with probability $$P(j) \sim q \circ h_j$$.
 More precisely, sample $$(j, t)$$ pairs according to $$q_t h_{j, t}$$ (where $$t$$ ranges over the

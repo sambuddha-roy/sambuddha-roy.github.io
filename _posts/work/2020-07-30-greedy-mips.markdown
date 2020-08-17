@@ -5,7 +5,7 @@ date:   2020-07-28 18:30:15 -0800
 categories: jekyll update
 ---
 
-Contains short notes on the [Greedy MIPS paper, NeurIPS 2017](https://papers.nips.cc/paper/7129-a-greedy-approach-for-budgeted-maximum-inner-product-search.pdf).
+Contains short notes on the [Greedy MIPS paper, NeurIPS 2017](https://papers.nips.cc/paper/7129-a-greedy-approach-for-budgeted-maximum-inner-product-search.pdf). I did not make any effort to beautify the diagrams here; rather the intention is to have a quick understanding of the underpinnings of the paper.
 
 ### Goal
 This paper considers the _Maximum Inner Product Search_ (MIPS) problem, stated as follows:
@@ -39,6 +39,12 @@ deep networks, the problem has seen a recent surge of interest, with a variety o
 * Some solutions involve a _reduction_ to
 the _Nearest Neighbor Search_ (NNS) problem,
 * Others involve _sampling_ based approaches.
+
+We will talk about these in other short notes, so we do not discuss those here.
+
+However, note that in the sampling approach,
+the idea is to
+
 
 **Reduction to NNS**
 <TODO: provide details here>

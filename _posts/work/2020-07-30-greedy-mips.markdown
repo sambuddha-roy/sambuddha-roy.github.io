@@ -6,28 +6,41 @@ categories: jekyll update
 ---
 
 ### Goal
-The basic problem is the _Maximum Inner Product Search_ (MIPS) problem: given a vector `q`, and a collection
+This paper considers the _Maximum Inner Product Search_ (MIPS) problem, stated as follows:
+
+Given a vector `q`, and a collection
 of candidate vectors `h_1, h_2, ..., h_n`, find out the candidates (top-k) that have the largest
 inner products `<w, h_i>`.
 
-Important dimensions: there are
+**Why is this problem interesting?**
+
+As one of many examples, from NLP, a common step is one where we need to choose one (or a fixed number, say 10) out of all the tokens in a vocabulary (say there are 40000 terms in the vocab). In order to do this, we "hit" the embeddings of the vocab tokens with a "query"
+vector (say, a learned weight vector) and take the top few inner products. This is clearly captured by the framework of the MIPS problem.
+
+Back to the MIPS problem, the important dimensions are:
 * `n` vectors
 * each vector (including the query `q`) has dimension `k`.
 
 Thus, a naive linear search will use `nk` operations to compute the inner products, followed by a sorting operation that takes
 `n log n` time.
 
-Overall goal is to improve on this, maybe with an approximation to the MIPS problem.
-(One version the authors mention is _budgeted_ MIPS where there is a budget on the total
-  number of inner products that are allowed.)
+The overall goal is to improve on this time; however the tradeoff is that we may instead yield an approximation to the MIPS problem.
+
+In the paper, the authors actually consider the
+_budgeted_ MIPS problem: we have to pick up `B`
+such vectors that are the top candidates `h_i` maximizing the value `<w, h_i>`. In more detail,
+pick the `B` vectors `h_i` such that
 
 ### Related Literature
-The MIPS problem has seen a recent surge of interest, with solutions that involve a _reduction_ to
-the _Nearest Neighbor Search_ (NNS) problem, as also _sampling_ based approaches.
+Given the cardinal position, that the MIPS problem enjoys in many naturally occurring computations in
+deep networks, the problem has seen a recent surge of interest, with a variety of solutions
+
+* Some solutions involve a _reduction_ to
+the _Nearest Neighbor Search_ (NNS) problem,
+* Others involve _sampling_ based approaches.
 
 **Reduction to NNS**
-
-Let us consider the MIPS problem where we are trying to find only the _top_ candidate.
+<TODO: provide details here>
 
 **Sampling for MIPS**
 
